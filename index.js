@@ -33,7 +33,7 @@ function beadSort(arr) {
     }
     
     // суммируем елементы мартрицы по столбцам
-    for(let i = 0; i < matrix.length; i += 1) {
+    for(let i = matrix.length - 1; i >= 0; i -= 1) {
       let sum = 0
 
       for(let j = 0; j < matrix.length; j += 1) {
@@ -45,7 +45,7 @@ function beadSort(arr) {
    
     console.log("beats => ", matrix); // смотрим матрицу
 
-    return result.reverse()
+    return result
 }
 
 console.log(beadSort(arr));
